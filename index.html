@@ -30,6 +30,27 @@
         margin: 5px 2px;
         border-radius: 10%;
       }
+      .avatar {
+  vertical-align: middle;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+      .flex-container {
+        display: flex;
+        flex-wrap: wrap;
+        /* background-color: DodgerBlue; */
+      }
+
+      .flex-container > div {
+        background-color: #f1f1f1;
+        width: 162px;
+        height: 162px;
+        /* margin: 10px; */
+        text-align: center;
+        /* line-height: 75px; */
+        font-size: 30px;
+      }
      
     </style>
     
@@ -115,7 +136,7 @@
 
                 <div class="col-lg-4 col-md-12 col-12">
                     <div class="about-image svg">
-                        <img src="images/myimg.jpg" class="img-fluid rounded hover-zoom" alt="my image" style="width: 280px; height: 400px;">
+                        <img src="images/myimg.jpg" class="img-fluid rounded hover-zoom avtar"  alt="my image">
                     </div>
                 </div>
 
@@ -228,30 +249,23 @@
     <!-- Add Technology Stack-->
     <section id="tech">
       <h2 align="center">Technology Stack</h2>
-    <table class="table table-borderless table-hover col-lg-9 text-center mx-auto col-12">
-      <tbody>
-        <tr>
-          <td><img src="images/icons8-html-5.svg" style="width: 100px; height: 100px;"><br><h4>HTML</h4></td>
-          <td><img src="images/icons8-css3.svg" style="width: 100px; height: 100px;"><br><h4>CSS</h4></td>
-          <td style="width: 176px;"><img src="images/icons8-javascript.svg" style="width: 100px; height: 100px;"><br><h4>Javascript</h4></td>
-          <td><i class="fa-brands fa-react " style="font-size: 90px; color: blue; padding-top: 10px;"></i><br><h4>ReactJs</h4></td>
-          <td><img src="images/icons8-nodejs.svg" style="width: 100px; height: 100px;"><br><h4>NodeJs</h4></td>
-          <td><img src="images/icons8-mongodb.svg" style="width: 100px; height: 100px;"><br><h4>Mongodb</h4></td>
-        </tr>
-        <tr>
-          <td> <img src="images/c.svg" style="width: 100px; height: 100px;"><br><h4>C</h4></td>
-          <td><img src="https://www.freeiconspng.com/uploads/c--logo-icon-0.png" style="width: 100px; height: 100px;"alt="c++ logo image" /><br><h4>C++</h4></td>
-          <td><img src="images/java-svgrepo-com.svg" style="width: 100px; height: 100px;"><br><h4>Java</h4></td>
-          <td> <img src="images/icons8-python.svg" style="width: 100px; height: 100px;"><br><h4>Python</h4></td>
-        </tr>
-
-        <tr>
-          <td><img src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/64/000000/external-algorithm-computer-programming-icons-flaticons-lineal-color-flat-icons.png" style="width: 100px; height: 100px;"/><br><h4>DS & Algo</h4></td>
-        <td><img src="images/icons8-office-365 (1).svg" style="width: 100px; height: 100px;"/><br><h4>MS-Office</h4></td>
-        <td><img src="images/cloud-solid.svg" style="width: 100px; height: 100px; color: blue;"><br><h4>Cloud Computing</h4></td>
-      </tr>
-      </tbody>
-    </table>
+      <div class="flex-container col-lg-9 text-center mx-auto col-12">
+        <div><img src="images/icons8-html-5.svg" style="width: 100px; height: 100px;"><br><h4>HTML</h4></div>
+        <div><img src="images/icons8-css3.svg" style="width: 100px; height: 100px;"><br><h4>CSS</h4></div>
+        <div><img src="images/icons8-javascript.svg" style="width: 100px; height: 100px;"><br><h4>Javascript</h4></div>
+        <div><i class="fa-brands fa-react " style="font-size: 90px; color: blue; padding-top: 10px;"></i><br><h4>ReactJs</h4></div>
+        <div><img src="images/icons8-nodejs.svg" style="width: 100px; height: 100px;"><br><h4>NodeJs</h4></div>
+        <div><img src="images/icons8-mongodb.svg" style="width: 100px; height: 100px;"><br><h4>Mongodb</h4></div>
+      
+        <div> <img src="images/c.svg" style="width: 100px; height: 100px;"><br><h4>C</h4></div>
+          <div><img src="https://www.freeiconspng.com/uploads/c--logo-icon-0.png" style="width: 100px; height: 100px;"alt="c++ logo image" /><br><h4>C++</h4></div>
+          <div><img src="images/java-svgrepo-com.svg" style="width: 100px; height: 100px;"><br><h4>Java</h4></div>
+          <div> <img src="images/icons8-python.svg" style="width: 100px; height: 100px;"><br><h4>Python</h4></div>
+      
+          <div><img src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/64/000000/external-algorithm-computer-programming-icons-flaticons-lineal-color-flat-icons.png" style="width: 100px; height: 100px;"/><br><h4>DS & Algo</h4></div>
+          <div><img src="images/icons8-office-365 (1).svg" style="width: 100px; height: 100px;"/><br><h4>MS-Office</h4></div>
+          <div><img src="images/cloud-solid.svg" style="width: 100px; height: 100px; color: blue;"><br><h4>Cloud Computing</h4></div>
+      </div>
   </section>
 
 
@@ -260,19 +274,19 @@
       <h2 align="center">Projects</h2>
       <table class="table table-border table-hover col-lg-9 text-center mx-auto col-12">
         <tbody>
-          <tr>
+          <tr class="table-active">
             <td><p style="font-weight: bold;">Desktop Voice Assistant</p>
               <p>It is a python based Voice Assistant like Apple's siri, Google Assistant. It can perform many task by just
                 taking input as voice.
                 <p>It can perform: </p>
                 <ul class="list-group left" >
-                  <li class="list-group-item" > &#9728; Send an email.</li>
-                  <li class="list-group-item" > &#9728; Remind you for task,birthday or any special event.</li>
-                  <li class="list-group-item" > &#9728; Find available vaccine slot near you.</li>
-                  <li class="list-group-item" > &#9728; Search from wikipedia.</li>
-                  <li class="list-group-item" > &#9728; Open application installed on system,boot/reboot pc.</li>
-                  <li class="list-group-item" > &#9728; Take screenshot,click photo,record videos.</li>
-                  <li class="list-group-item" > &#9728; and many more task...</li>
+                  <li class="list-group-item" > &#9755; Send an email.</li>
+                  <li class="list-group-item" > &#9755; Remind you for task,birthday or any special event.</li>
+                  <li class="list-group-item" > &#9755; Find available vaccine slot near you.</li>
+                  <li class="list-group-item" > &#9755; Search from wikipedia.</li>
+                  <li class="list-group-item" > &#9755; Open application installed on system,boot/reboot pc.</li>
+                  <li class="list-group-item" > &#9755; Take screenshot,click photo,record videos.</li>
+                  <li class="list-group-item" > &#9755; and many more task...</li>
                 </ul>
               </p>
               <span class="badge badge-warning">Tech Used : </span>
@@ -280,12 +294,14 @@
               <span class="badge badge-success">Speech Recognition</span>
               <span class="badge badge-success">Operating System</span>
               <span class="badge badge-success">API</span>
-              <!-- <a href="#" target="_blank" rel="noopener noreferrer" class="badge badge-primary">Link</a> -->
+              <!-- <a href="#" target="_blank" rel="noopener noreferrer" class="badge badge-primary" style="pointer-events: none">Click Me</a> -->
             </td>
             <!-- <td><a href="#" target="_blank" rel="noopener noreferrer">Click here</a></td> -->
           </tr>
-          <tr>
-            <td><p style="font-weight: bold;">File Sharing App</p>
+          <tr class="table-active ">
+            <td>
+              <br>
+              <p style="font-weight: bold;">File Sharing App</p>
               <ul class="list-group left" >
               <li class="list-group-item" >This is a web application where users will upload and they will get a link so that they can easily share the file by just sending link. The second method is that our application itself will send that link through email to the recipient on the users behalf so that the recipient can download the file.
               </li>
@@ -299,12 +315,11 @@
               <span class="badge badge-success">Nodejs</span>
               <span class="badge badge-success">Mongodb</span>
               <span class="badge badge-success">NPM Modules</span>
-              <!-- <a href="#" target="_blank" rel="noopener noreferrer" class="badge badge-primary">Link</a> -->
+              <!-- <a href="#" target="_blank" rel="noopener noreferrer" class="badge badge-primary" style="pointer-events: none">Click Me</a> -->
             </p>
             </td>
-            <!-- <td><a href="#" target="_blank" rel="noopener noreferrer">Click here</a></td> -->
           </tr>
-          <tr>
+          <tr class="table-active ">
             <td><p style="font-weight: bold;">Algorithm Visualizer</p>
               <ul class="list-group left" >
               <li class="list-group-item" >A web application for visualizing Sorting Algorithms.
@@ -317,10 +332,9 @@
               <span class="badge badge-success">CSS</span>
               <span class="badge badge-success">Javascript</span>
               <span class="badge badge-success">Bootstrap</span>
-              <a href="https://rishavkumar1951.github.io/sorting-visualizer.github.io/" target="_blank" rel="noopener noreferrer" class="badge badge-primary">Click Me</a>
+              <!-- <a href="https://rishavkumar1951.github.io/sorting-visualizer.github.io/" target="_blank" rel="noopener noreferrer" class="badge badge-primary">Click Me</a> -->
             </p>
             </td>
-            <!-- <td><a href="#" target="_blank" rel="noopener noreferrer">Click here</a></td> -->
           </tr>
         </tbody>
       </table>
