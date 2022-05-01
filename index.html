@@ -30,12 +30,25 @@
         margin: 5px 2px;
         border-radius: 10%;
       }
-      .avatar {
+      /* .avatar {
   vertical-align: middle;
   width: 50px;
   height: 50px;
   border-radius: 50%;
+} */
+
+.img-hover-zoom--slowmo img {
+  transform-origin: 50% 65%;
+  transition: transform 5s, filter 3s ease-in-out;
+  filter: brightness(150%);
 }
+
+/* The Transformation */
+.img-hover-zoom--slowmo:hover img {
+  filter: brightness(100%);
+  transform: scale(3);
+}
+
       .flex-container {
         display: flex;
         flex-wrap: wrap;
@@ -135,8 +148,8 @@
                 </div>
 
                 <div class="col-lg-4 col-md-12 col-12">
-                    <div class="about-image svg">
-                        <img src="images/myimg.jpg" class="img-fluid rounded hover-zoom avtar"  alt="my image">
+                    <div class="img-hover-zoom">
+                        <img src="images/myimg.jpg" class="img-fluid rounded shadow-lg p-3 mb-5 bg-white rounded"  alt="my image">
                     </div>
                 </div>
 
@@ -250,21 +263,21 @@
     <section id="tech">
       <h2 align="center">Technology Stack</h2>
       <div class="flex-container col-lg-9 text-center mx-auto col-12">
-        <div><img src="images/icons8-html-5.svg" style="width: 100px; height: 100px;"><br><h4>HTML</h4></div>
-        <div><img src="images/icons8-css3.svg" style="width: 100px; height: 100px;"><br><h4>CSS</h4></div>
-        <div><img src="images/icons8-javascript.svg" style="width: 100px; height: 100px;"><br><h4>Javascript</h4></div>
-        <div><i class="fa-brands fa-react " style="font-size: 90px; color: blue; padding-top: 10px;"></i><br><h4>ReactJs</h4></div>
-        <div><img src="images/icons8-nodejs.svg" style="width: 100px; height: 100px;"><br><h4>NodeJs</h4></div>
-        <div><img src="images/icons8-mongodb.svg" style="width: 100px; height: 100px;"><br><h4>Mongodb</h4></div>
+        <div><img src="images/icons8-html-5.svg" style="width: 100px; height: 100px;"><br><p>HTML</p></div>
+        <div><img src="images/icons8-css3.svg" style="width: 100px; height: 100px;"><br><p>CSS</p></div>
+        <div><img src="images/icons8-javascript.svg" style="width: 100px; height: 100px;"><br><p>Javascript</p></div>
+        <div><i class="fa-brands fa-react " style="font-size: 90px; color: blue; padding-top: 10px;"></i><br><p>ReactJs</p></div>
+        <div><img src="images/icons8-nodejs.svg" style="width: 100px; height: 100px;"><br><p>NodeJs</p></div>
+        <div><img src="images/icons8-mongodb.svg" style="width: 100px; height: 100px;"><br><p>Mongodb</p></div>
       
-        <div> <img src="images/c.svg" style="width: 100px; height: 100px;"><br><h4>C</h4></div>
-          <div><img src="https://www.freeiconspng.com/uploads/c--logo-icon-0.png" style="width: 100px; height: 100px;"alt="c++ logo image" /><br><h4>C++</h4></div>
-          <div><img src="images/java-svgrepo-com.svg" style="width: 100px; height: 100px;"><br><h4>Java</h4></div>
-          <div> <img src="images/icons8-python.svg" style="width: 100px; height: 100px;"><br><h4>Python</h4></div>
+        <div> <img src="images/c.svg" style="width: 100px; height: 100px;"><br><p>C</p></div>
+          <div><img src="https://www.freeiconspng.com/uploads/c--logo-icon-0.png" style="width: 100px; height: 100px;"alt="c++ logo image" /><br><p>C++</p></div>
+          <div><img src="images/java-svgrepo-com.svg" style="width: 100px; height: 100px;"><br><p>Java</p></div>
+          <div> <img src="images/icons8-python.svg" style="width: 100px; height: 100px;"><br><p>Python</p></div>
       
-          <div><img src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/64/000000/external-algorithm-computer-programming-icons-flaticons-lineal-color-flat-icons.png" style="width: 100px; height: 100px;"/><br><h4>DS & Algo</h4></div>
-          <div><img src="images/icons8-office-365 (1).svg" style="width: 100px; height: 100px;"/><br><h4>MS-Office</h4></div>
-          <div><img src="images/cloud-solid.svg" style="width: 100px; height: 100px; color: blue;"><br><h4>Cloud Computing</h4></div>
+          <div><img src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/64/000000/external-algorithm-computer-programming-icons-flaticons-lineal-color-flat-icons.png" style="width: 100px; height: 100px;"/><br><p>DS & Algo</p></div>
+          <div><img src="images/icons8-office-365 (1).svg" style="width: 100px; height: 100px;"/><br><p>MS-Office</p></div>
+          <div><img src="images/cloud-solid.svg" style="width: 100px; height: 100px; color: blue;"><br><p>Cloud Computing</p></div>
       </div>
   </section>
 
